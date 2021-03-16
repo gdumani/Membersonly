@@ -4,4 +4,5 @@
     Welcome <%= current_user.present? ? current_user.email : "visitor"%>! 
   </h2> 
 
-  <%= @post %>
+<%= render "form", post: @post %>
+ 
