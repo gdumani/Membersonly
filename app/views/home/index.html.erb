@@ -2,7 +2,10 @@
   <h1>Members Only</h1>
 </div>
   <h2 class="d-flex aling-items-center justify-content-center">
-    Welcome <%= current_user.present? ? current_user.email : "visitor"%>! 
+    Welcome <%= current_user.present? ? current_user.username : "visitor"%>! 
   </h2>
 </div>
-<p>Find me in app/views/home/index.html.erb</p>
+
+
+<%#= render partial 'shared/all_post' %>
+
