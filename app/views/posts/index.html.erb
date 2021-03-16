@@ -1,0 +1,7 @@
+<h1>Posts</h1>
+
+  <h2 class="d-flex aling-items-center justify-content-center">
+    Welcome <%= current_user.present? ? current_user.email : "visitor"%>! 
+  </h2> 
+
+  <%= @post %>

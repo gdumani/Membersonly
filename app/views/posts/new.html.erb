@@ -1,0 +1,19 @@
+<h1>Posts</h1>
+<%= form_with model: @post do |form| %>
+  <%= render "shared/form_errors", form: form  %>
+    <h3><%= current_user.email %></h3>
+  <div class="mb-3">
+    <%= form.label :body %>
+    <%= form.text_area :body, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :publish_at %>
+    <div class="form-control">
+       <%= form.datetime_select :publish_at %>
+    </div>
+  </div>
+
+  <%= form.button "Post", class: "btn btn-primary" %>
+
+<% end %>
