@@ -1,5 +1,5 @@
 <h1>Posts</h1>
-<%= form_with model: post do |form| %>
+<%= form_with model: @post do |form| %>
   <%= render "shared/form_errors", form: form  %>
   <div class="mb-3">
     <%= form.label :body %>

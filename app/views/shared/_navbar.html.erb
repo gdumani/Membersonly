@@ -1,12 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">Members only</a>
+  <div class="container-fluid"> 
+  <div class="navbar-nav ms-auto">
+    <%= link_to 'Members only', root_path, class: "nav-link" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    </div>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
         <% if user_signed_in? %>
+          <%= link_to "New Post", posts_new_path, class: "btn btn-primary text-white nav-link" %>
           <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
         <% else%>
           <%= link_to 'Register', new_user_registration_path, class: 'nav-link' %>
