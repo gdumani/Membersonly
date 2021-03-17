@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-The project aim was to create a *Posts application* that allows members-only to write anonymous posts and see the authors' names.  
+The project aim was to create a **Posts** application that allows members-only to write anonymous posts and see the authors' names.  
 
 ## Build with
 * Ruby 2.7.0
