@@ -11,9 +11,9 @@ The project aim was to create a *Posts application* that allows members-only to 
 
 ## Getting started
 
-- To clone and run the application locally, use the following steps:
+To clone and run the application locally, use the following steps:
 - Clone the repository from GitHub, using the `git clone` command.
-- Create the new application and switch to its folder using `$cd folder name`.
+- Create the new application and switch to its folder `$cd folder name`.
 - Run `bundle` in the terminal to install the gems.
 - Run `rails server` to connect to the server.
 - Visit http://localhost:3000 to verify the connection.
@@ -33,7 +33,7 @@ end
 ## Devise installation 
 - Add `gem 'devise`  to *Gemfile* and run `bundle install` in the terminal.
 - Run `rails g devise: install` and follow the instructions printed out on the terminal to configure the `devise`.
-- To create a *User model* run `rails g devise User` and then `rails db:migrate`.
+- To create a User model run `rails g devise User` and then `rails db:migrate`.
 
 
 ## Authors
