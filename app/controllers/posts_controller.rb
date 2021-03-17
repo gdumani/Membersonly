@@ -11,7 +11,7 @@ class PostsController < ApplicationController
   def create
     @post = current_user.posts.new(post_params)
     if @post.save
-      redirect_to posts_index_path, notice: 'Your post will be publlished at...'
+      redirect_to posts_index_path, notice: 'You just published a new post!'
     else
       render :new
     end

@@ -1,9 +1,10 @@
 <h1>Posts</h1>
 <%= form_with model: @post do |form| %>
-  <%= render "shared/form_errors", form: form  %>
+  <%= render "shared/flash", form: form  %>
+
   <div class="mb-3">
     <%= form.label :body %>
-    <%= form.text_area :body, class: "form-control" %>
+    <%= form.text_area :body, class: "form-control" %> 
   </div>
 
   <div class="mb-3">
