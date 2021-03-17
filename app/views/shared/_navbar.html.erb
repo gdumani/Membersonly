@@ -10,6 +10,7 @@
       <div class="navbar-nav ms-auto">
         <% if user_signed_in? %>
           <%= link_to "New Post", posts_new_path, class: "btn btn-primary text-white nav-link" %>
+          <%= link_to 'My posts', posts_index_path,  class: 'btn btn-secondary text-white nav-link' %>
           <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
         <% else%>
           <%= link_to 'Register', new_user_registration_path, class: 'nav-link' %>
