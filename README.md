@@ -42,7 +42,7 @@ end
 
 - GitHub: [@gdumani](https://github.com/gdumani)
 - Twitter: [@gdumani1](https://twitter.com/gdumani1)
-- LinkedIn: [ Giancarlo-Dumani](https://www.linkedin.com/in/giancarlo-dumani-a7364a1a1/?originalSubdomain=cr)
+- LinkedIn: [ Giancarlo-Dumani](https://www.linkedin.com/in/gdumani/?originalSubdomain=cr)
 
 **Mina**
 
