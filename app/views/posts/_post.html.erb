@@ -1,3 +1,6 @@
-<div class="mb-3 card card-body">
-  <%= post.body %>
+<div class="mb-3 card card-body"> 
+  <div><%= post.body%></div>
+  <% if current_user.present?%> 
+  <div class="fst-italic" >Author: <%=post.user.username%></div>
+  <%end%>
 </div>
