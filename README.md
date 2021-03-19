@@ -1,24 +1,63 @@
-# README
+# Members Only 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-Things you may want to cover:
+The project aim was to create a **Posts** application that allows members-only to write anonymous posts and see the authors' names.  
 
-* Ruby version
+## Build with
+* Ruby 2.7.0
+* Rais 6
+* SQL lite
 
-* System dependencies
+## Getting started
 
-* Configuration
+To clone and run the application locally, use the following steps:
+- Clone the repository from GitHub, using the `git clone` command.
+- Create the new application and switch to its folder `$cd folder name`.
+- Run `bundle` in the terminal to install the gems.
+- Run `rails server` to connect to the server.
+- Visit http://localhost:3000 to verify the connection.
+- To set up and configure your database for the first time, use `rails db:create` command.
+- To configure SQLight3 for Heroku Deployment replace `gem 'sqlite3'` in the `Gemfile` with the following code:
 
-* Database creation
+```
+group :development, :test do
+ gem 'sqlite3'
+end
 
-* Database initialization
+group :production do
+  gem 'pg'
+end
+```
 
-* How to run the test suite
+## Devise installation 
+- Add `gem 'devise`  to *Gemfile* and run `bundle install` in the terminal.
+- Run `rails g devise: install` and follow the instructions printed out on the terminal to configure the `devise`.
+- To create a User model run `rails g devise User` and then `rails db:migrate`.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Authors
 
-* ...
+**Giancarlo Dumani**
+
+- GitHub: [@gdumani](https://github.com/gdumani)
+- Twitter: [@gdumani1](https://twitter.com/gdumani1)
+- LinkedIn: [ Giancarlo-Dumani](https://www.linkedin.com/in/gdumani/?originalSubdomain=cr)
+
+**Mina**
+
+- GitHub: [@Takhmina175](https://github.com/Takhmina175)
+- Twitter: [@Takhmin73630110](https://twitter.com/Takhmin73630110)
+- LinkedIn: [Takhmina Makhkamova](https://www.linkedin.com/in/takhmina-makhkamova-7628136b/)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## License
+
+This project is [MIT](./LICENSE) licensed.
+
+## Acknowledgements
+
+- [Microverse](https://microverse.org)

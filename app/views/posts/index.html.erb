@@ -1,0 +1,13 @@
+<div class="d-flex aling-items-center justify-content-between">
+  <h1>Posts</h1> 
+</div>
+
+  <h2>
+    Welcome <%= current_user.present? ? current_user.username : "visitor"%>! 
+  </h2> 
+
+<%= render @posts %>
+ 
+
+
+ 
